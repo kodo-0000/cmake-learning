@@ -4,4 +4,6 @@ project(HELLO CXX)
 
 message(STATUS "hello world")
 
-add_executable(hello_world hello_world.cc)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
+
+add_executable(hello_world src/hello_world.cc)
